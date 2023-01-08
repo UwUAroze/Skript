@@ -68,7 +68,7 @@ public class FlatFileStorage extends VariablesStorage {
 	private volatile boolean loaded = false;
 	
 	final AtomicInteger changes = new AtomicInteger(0);
-	private final int REQUIRED_CHANGES_FOR_RESAVE = 1000;
+	private final int REQUIRED_CHANGES_FOR_RESAVE = 0; // im sure this is fine
 	
 	@Nullable
 	private Task saveTask;
