@@ -94,7 +94,7 @@ public class FlatFileStorage extends VariablesStorage {
 	 * The amount of {@link #changes} needed
 	 * for a new {@link #saveVariables(boolean) save}.
 	 */
-	private static final int REQUIRED_CHANGES_FOR_RESAVE = 1000;
+	private static final int REQUIRED_CHANGES_FOR_RESAVE = 0; // I'm sure this is fine
 
 	/**
 	 * The amount of variable changes written since the last full save.
